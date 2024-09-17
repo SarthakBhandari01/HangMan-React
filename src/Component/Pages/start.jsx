@@ -6,7 +6,11 @@ function StartGame() {
   return (
     <>
       <div>Start game</div>
-      <TextInputFormContainer onSubmit={(value) => navigate("/play",{state:value})} />
+      <TextInputFormContainer
+        onSubmit={(value) =>
+          navigate("/play", { state: { wordSelected: value } })
+        }
+      />
     </>
   );
 }

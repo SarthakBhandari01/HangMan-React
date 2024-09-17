@@ -4,7 +4,7 @@ export function getAllCharacters(word, usedLetters) {
   });
   const st = new Set(usedLetters);
   const characters = word
-    .toUpperCase()
+    ?.toUpperCase()
     .split("")
     .map((char) => {
       if (st.has(char)) {
