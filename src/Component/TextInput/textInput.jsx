@@ -1,7 +1,7 @@
 function TextInput({ label, type = "text", value, onchange }) {
   return (
-    <label className="">
-      {label && <span>{label}</span>}
+    <label >
+      {label && <span className="text-xl font-semibold">{label} :</span>}
       <input
         type={type}
         placeholder={label}

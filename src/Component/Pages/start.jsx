@@ -5,12 +5,14 @@ function StartGame() {
   const navigate = useNavigate();
   return (
     <>
-      <div>Start game</div>
-      <TextInputFormContainer
-        onSubmit={(value) =>
-          navigate("/play", { state: { wordSelected: value } })
-        }
-      />
+      <div className="font-bold text-2xl text-center my-4">Start Game</div>
+      <div className="my-4">
+        <TextInputFormContainer
+          onSubmit={(value) =>
+            navigate("/play", { state: { wordSelected: value } })
+          }
+        />
+      </div>
     </>
   );
 }

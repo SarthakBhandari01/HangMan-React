@@ -21,9 +21,7 @@ function Hangman({ step }) {
   return (
     <div>
       <img
-        src={
-          step >= images.length ? images[images.length- 1] : images[step]
-        }
+        src={step >= images.length ? images[images.length - 1] : images[step]}
       />
     </div>
   );

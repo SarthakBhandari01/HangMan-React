@@ -6,7 +6,7 @@ function Button({ text, buttonType = "button", styleType,onclick }) {
     <button
       type={buttonType}
       onClick={onclick}
-      className={`px-3 py-2 rounded-md text-white ${getButtonStyling(styleType)}`}
+      className={`px-4 py-2 rounded-lg text-white ${getButtonStyling(styleType)}`}
     >
       {text}
     </button>

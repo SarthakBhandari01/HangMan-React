@@ -8,8 +8,8 @@ function TextInputForm({
   value,
 }) {
   return (
-    <form className="flex gap-3" onSubmit={handleFormSubmit}>
-      <div>
+    <form className="p-4" onSubmit={handleFormSubmit}>
+      <div className="mb-4">
         <TextInput
           onchange={handleTextInputChange}
           value={value}
@@ -17,15 +17,17 @@ function TextInputForm({
           label={"Enter the Word or Phase"}
         />
       </div>
-      <div>
-        <Button
-          text={hide ? "show" : "hide"}
-          styleType={"secondary"}
-          onclick={() => setHide(!hide)}
-        />
-      </div>
-      <div>
-        <Button text={"ok"} buttonType="submit" />
+      <div className="flex gap-3">
+        <div>
+          <Button
+            text={hide ? "Show" : "Hide"}
+            styleType={"secondary"}
+            onclick={() => setHide(!hide)}
+          />
+        </div>
+        <div>
+          <Button text={"Ok"} buttonType="submit" />
+        </div>
       </div>
     </form>
   );
